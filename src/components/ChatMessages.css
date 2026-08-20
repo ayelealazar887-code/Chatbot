@@ -1,7 +1,14 @@
 .chat-messages-container {
-        flex-grow: 1;
-        margin-top: 20px;
-        overflow: scroll;
-        scrollbar-width: none;
+  flex: 1;
+  min-height: 0;
+  padding: 28px 24px 12px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db transparent;
+}
 
-      }
+@media (max-width: 480px) {
+  .chat-messages-container {
+    padding: 20px 14px 8px;
+  }
+}

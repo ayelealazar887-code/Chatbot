@@ -1,17 +1,26 @@
 
       .app-container {
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-
-        height: 100vh;
+        width: min(100%, 760px);
+        height: 100dvh;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
+        overflow: hidden;
+        background: #ffffff;
+        box-shadow: 0 0 32px rgba(31, 41, 55, 0.08);
       }
 
-
-     
+      @media (min-width: 760px) {
+        .app-container {
+          height: min(100dvh, 900px);
+          margin-top: 24px;
+          border: 1px solid #e5e7eb;
+          border-radius: 18px;
+        }
+      }
 
       
 
-      
+
+
+

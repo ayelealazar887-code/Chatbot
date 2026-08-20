@@ -31,7 +31,7 @@ function App() {
     },
   ]);
   return (
-    <div>
+    <div className="app-container">
       <ChatMessages chatMessages={chatMessages} />
       <ChatInput
         chatMessages={chatMessages}
